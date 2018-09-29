@@ -1,0 +1,103 @@
+{
+  "figure": {
+    "data": [],
+    "frames": [],
+    "layout": {
+      "autosize": false,
+      "width": 900,
+      "height": 800,
+      "title": "Density of states of BCC Iron",
+      "xaxis": {
+        "range": [-13, 10],
+        "title": "Energy (eV)",
+        "titlefont": {
+          "size": 18
+        },
+        "showgrid": false,
+        "showline": true,
+        "mirror": true
+      },
+      "yaxis": {
+        "title": "DOS (states/eV)",
+        "titlefont": {
+          "size": 18
+        },
+        "showgrid": true,
+        "showline": true,
+        "mirror": true
+      },
+      "sliders": [{
+        "active": 0,
+        "yanchor": "top",
+        "xanchor": "left",
+        "currentvalue": {
+          "font": {"size": 20},
+          "prefix": "Ordering: ",
+          "visible": true,
+          "xanchor": "left"
+        },
+        "transition": {
+          "duration": 300,
+          "easing": "cubic-in-out"
+        },
+        "pad": {
+          "b": 10,
+          "t": 80
+        },
+        "len": 0.5,
+        "x": 0.25,
+        "y": 0,
+        "steps": [
+          {
+            "method": "animate",
+            "label": "nonmagnetic",
+            "args": [
+              [
+                "nonmagnetic"
+              ],
+              {
+                "frame": {
+                  "duration": 600,
+                  "redraw": false
+                },
+                "mode": "immediate"
+              }
+            ]
+          },
+          {
+            "method": "animate",
+            "label": "ferromagnetic",
+            "args": [
+              [
+                "ferromagnetic"
+              ],
+              {
+                "frame": {
+                "duration": 600,
+                "redraw": false
+              },
+                "mode": "immediate"
+              }
+            ]
+          },
+          {
+            "method": "animate",
+            "label": "g-type",
+            "args": [
+              [
+                "g-type"
+              ],
+              {
+                "frame": {
+                  "duration": 600,
+                  "redraw": false
+                },
+                "mode": "immediate"
+              }
+            ]
+          }
+        ]
+      }]
+    }
+  }
+}

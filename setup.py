@@ -32,6 +32,7 @@ setuptools.setup(
     long_description=readme,
     python_requires=">=3.7",
     packages=setuptools.find_packages(),
+    package_data={"": "configurations"},
     include_package_data=True,
     setup_requires=[] + pytest_runner,
     install_requires=[],
@@ -54,4 +55,8 @@ setuptools.setup(
             "build_dir": ("setup.py", "docs/_build"),
         }
     },
+    entry_points="""
+    [console_scripts]
+    dataviztool=dataviz.cli:cli
+    """,
 )

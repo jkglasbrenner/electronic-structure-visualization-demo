@@ -12,6 +12,12 @@ dependencies:
   - sphinx_rtd_theme
   - yapf=0.23.0
   - pip:
+      - cite2c
+      - ipympl
+      - jupyterlab_code_formatter
+      - jupyterlab-git
+      - jupyterlab_github
+      - jupyterlab_templates
       - pip==18.0
       - plotly
       - pydocstyle
