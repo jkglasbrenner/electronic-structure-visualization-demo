@@ -1,0 +1,9 @@
+include README.rst LICENSE
+
+graft docs
+graft dataviz/configurations
+
+global-exclude *.py[co] .ipynb_checkpoints/* .gitkeep
+
+prune docs/_build
+prune docs/_themes

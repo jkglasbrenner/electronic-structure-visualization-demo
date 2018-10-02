@@ -381,17 +381,21 @@ vignettes/*.pdf
 # ---------------------------
 
 # track these files, if they exist
+!.github/
+!.gitlab/
 !.editorconfig
 !.env.example
 !.flake8
 !.gitattributes
 !.gitignore
-!.github/
-!.gitlab/
+!.gitkeep
 !.readthedocs.yml
 !.style.yapf
 !.travis.yml
+!.vscode/extensions.json
+!.vscode/launch.json
 !.vscode/settings.json
 !.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
+!data/BAND_S01_A0001.OUT.*.gz
+!data/BANDLINES.OUT.*.gz
+!data/TDOS.OUT.*.gz
