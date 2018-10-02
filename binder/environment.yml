@@ -1,0 +1,13 @@
+---
+name: binder-dataviz
+channels:
+  - defaults
+  - jkglasbrenner
+dependencies:
+  - anaconda=5.3.0=py37_0
+  - pyhamcrest=1.9.0
+  - pip:
+      - ipympl
+      - jupyter_contrib_nbextensions
+      - plotly
+...
