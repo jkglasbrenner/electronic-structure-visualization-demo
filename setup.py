@@ -39,6 +39,7 @@ setuptools.setup(
     install_requires=[
         "click",
         "ipython",
+        "ipympl",
         "ipywidgets",
         "matplotlib",
         "plotly",
