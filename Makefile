@@ -14,7 +14,7 @@ COPY						=	cp
 FIND						=	find
 
 CONDA						=	conda
-CONDA_ENV_FILE				=	environment.yaml
+CONDA_ENV_FILE				=	environment.yml
 
 PY							?=	python3
 PY_SETUP					=	setup.py
